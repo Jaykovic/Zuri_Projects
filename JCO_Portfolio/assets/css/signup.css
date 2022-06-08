@@ -1,0 +1,301 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+  * {
+    /* margin: 0;
+      padding: 0;
+      box-sizing: border-box; */
+    font-family: "Poppins", sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: montserrat;
+    background-color: #D8D2CB;
+  }
+  
+  /* NAVBAR SECTION */
+  nav {
+    /* background: #827397; */
+    height: 80px;
+    width: 100%;
+  }
+  label.logo {
+    color: white;
+    font-size: 90px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,
+  a:hover {
+    background: #181e74;
+    transition: 0.5s;
+  }
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  @media (max-width: 952px) {
+    label.logo {
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px) {
+    .checkbtn {
+      display: block;
+    }
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+    }
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a {
+      font-size: 20px;
+    }
+    a:hover,
+    a.active {
+      background: none;
+      color: #181e74;
+    }
+    #check:checked ~ ul {
+      left: 0;
+    }
+  }
+  
+  /* SOCIAL MEDIA LET'S CONNECT */
+  /* social media */
+  .social-account-wrapper-connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .social-account-wrapper-connect svg {
+    width: 30px;
+    height: 30px;
+    fill: #181e74;
+    /* fill: #f9320a; */
+  }
+  
+  .social-account-wrapper-connect svg:hover {
+    fill: #000;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+  }
+  
+
+/* CONTACT STYLING */
+.contact__us__text {
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 30px;
+    color: #181e74;
+}
+
+
+
+.contact-container{
+    width: 400px;
+    /* height: 100vh; */
+    margin: auto;
+    padding: 10px 20px;
+    border: 1px solid none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(5, 121, 255, 0.2);
+    position: relative;
+    top: 100px;
+    margin-bottom: 150px;
+  }
+  .contact-header h2{
+    font-size: 24px;
+    color: #fff;
+  }
+  .contact-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  
+  }
+  .img-container{
+    padding-left: 12px;
+    margin-left: 10px;
+  
+  }
+  .contact-header img{
+    width: 40px;
+    height: 40px;
+  }
+  .contact-content{
+    margin: 10px;
+  }
+  
+  .input-section{
+    width: 100%;
+    padding: 10px 0;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  .client-brief{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  label{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: #181e74;
+  }
+
+/*Contact Us Form*/
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=password],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+/* input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 40%;
+
+} */
+  
+  
+  /* CONTACT ME BUTTON */
+  .submit {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .submit {
+    /* background-color: #f9320a; */
+    background-color: #181e74;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px 100px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px 25px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5;
+  }
+  
+  .submit:hover {
+    opacity: 0.8;
+  }
+  
+  /* social media */
+  .social-account-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .social-account-wrapper svg {
+    width: 30px;
+    height: 30px;
+    fill: #181e74;
+    /* fill: #f9320a; */
+  }
+  
+  .social-account-wrapper svg:hover {
+    fill: #000;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+  }
+  
+  /* COPYRIGHT */
+  .copyright {
+    font-size: 18px;
+    text-align: center;
+    margin: 20px auto;
+    color: #181e74;
+  }
+
+  hr {
+    height: 1px;
+    border-width: 0;
+    background-color: #181e74;
+  }
