@@ -1,4 +1,4 @@
-<!-- Create the following HTML pages, each page should have links leading to the other pages in a navigation bar at the header. For example, on the About page (home page) there should be a navigation bar containing links to the contact page, registration page and login page :
+Create the following HTML pages, each page should have links leading to the other pages in a navigation bar at the header. For example, on the About page (home page) there should be a navigation bar containing links to the contact page, registration page and login page :
 About Me (this should be your home page), 
 Contact page, 
 Registration page
@@ -24,4 +24,4 @@ State/province
 Email
 password
 Confirm password
-Login page: Add a login page with an Email field and a password field. Add basic HTML validation to the login form. It should have a submit button with the label "Sign In." -->
+Login page: Add a login page with an Email field and a password field. Add basic HTML validation to the login form. It should have a submit button with the label "Sign In."
