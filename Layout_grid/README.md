@@ -3,7 +3,7 @@
 Task Title: CSS Flexbox and Grid Layout
 Full Time
 Fullstack
-Created 12-06-2022 20:38:42
+
 
 A) Recreate a 3-column card design using CSS Flexbox  Layout
 - This task should be on the index.html file .
