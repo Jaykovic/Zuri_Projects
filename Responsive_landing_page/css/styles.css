@@ -1,0 +1,452 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+/********************* Top Container *********************/
+.top-container {
+  background-color: hsl(193, 100%, 96%);
+  background-image: url(../images/bg-hero-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 3% 7% 5% 7%;
+}
+
+/****** Top Bar ******/
+.top-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.top-bar img {
+  height: 1.875rem;
+}
+
+.top-bar button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 60px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-left: auto;
+  padding: 0.9rem 4.1rem;
+}
+
+.top-bar button:hover {
+  color: hsl(208, 11%, 55%);
+}
+
+/****** Introduction ******/
+.introduction {
+  display: flex;
+  align-items: center;
+}
+
+.introduction-paragraph {
+  margin-right: 5%;
+}
+
+.introduction-paragraph h1 {
+  font-size: 2.5rem;
+}
+
+.introduction-paragraph button {
+  background-color: hsl(322, 100%, 66%);
+  border: none;
+  border-radius: 60px;
+  box-shadow: rgba(255, 82, 191, 0.2) 0px 8px 24px;
+  cursor: pointer;
+  color: white;
+  font-size: 0.8rem;
+  margin: 1rem 0;
+  padding: 1.1rem 4.1rem;
+}
+
+.introduction-paragraph button:hover {
+  background-color: hsl(322, 100%, 80%);
+}
+
+.introduction-image {
+  width: 150%;
+}
+
+.introduction-image img {
+  max-width: 100%;
+}
+
+/********************* Middle Container *********************/
+.middle-container {
+  margin-top: 7%;
+  padding: 3% 8% 5%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 400px;
+  margin-bottom: 3%;
+  padding: 2% 0;
+}
+
+.card h2 {
+  margin-bottom: 0;
+}
+
+.card p {
+  color: hsl(208, 11%, 55%);
+  margin-top: 0.625rem;
+}
+
+.card-description {
+  flex: 1 1 40%;
+  margin: 0 10%;
+}
+
+.card-image {
+  flex: 1 1 375px;
+  margin: 0 3% 0 auto;
+}
+
+.card-image img,
+.card-image-left img {
+  max-width: 100%;
+}
+
+.card-image-left {
+  flex: 1 1 475px;
+  margin: 6% auto 6% 10%;
+}
+
+.card-description-right {
+  flex: 1 1 50%;
+  margin: 0 2% 0 13%;
+}
+
+/********************* CTA *********************/
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8%;
+}
+
+.cta div {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: black;
+  text-align: center;
+  transform: translate(0, 35%);
+  width: 800px;
+  padding: 3.5% 0 5%;
+}
+
+.cta h2 {
+  font-size: 2rem;
+}
+
+.cta button {
+  background-color: hsl(322, 100%, 66%);
+  border: none;
+  border-radius: 60px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  padding: 1.6rem 6.5rem;
+}
+
+.cta button:hover {
+  background-color: hsl(322, 100%, 80%);
+}
+
+/********************* Bottom Section *********************/
+.bottom-section {
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  padding: 0 14% 0 8%;
+}
+
+.bottom-section > img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(4695%)
+    hue-rotate(291deg) brightness(112%) contrast(99%);
+  height: 2.5rem;
+  margin-top: 12rem;
+}
+
+/****** Bottom Container ******/
+.bottom-container {
+  display: flex;
+  gap: 12%;
+  font-weight: 300;
+  padding: 1% 0 3%;
+}
+
+/**** Info Section ****/
+.info {
+  display: flex;
+  flex: 1 1 200px;
+}
+
+.info div {
+  display: grid;
+  align-items: center;
+  grid-template: repeat(3, auto) / repeat(2, auto);
+  grid-column-gap: 1rem;
+}
+
+.info p {
+  margin-bottom: 1rem;
+}
+
+.info img[alt="location"] {
+  margin-bottom: 2.5rem;
+}
+
+/**** Link Section ****/
+.link {
+  display: flex;
+  flex: 1 1 125px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+}
+
+.link-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+}
+
+.link a {
+  color: white;
+  margin: 0.625rem;
+  text-decoration: none;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+/**** Social Section ****/
+.social {
+  padding-top: 0.8rem;
+}
+
+.social div {
+  border: solid 1px white;
+  border-radius: 50%;
+  display: inline-block;
+  height: 1.8rem;
+  width: 2rem;
+  margin: 0 0.7rem 1rem 0;
+  padding: 0.3rem 0.1rem 0;
+  text-align: center;
+}
+
+.social div:hover {
+  border-color: hsl(322, 100%, 66%);
+  color: hsl(322, 100%, 66%);
+}
+
+/********************* Footer *********************/
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 300;
+  overflow: hidden;
+}
+
+footer div {
+  float: right;
+  padding: 0 5rem 4rem 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: hsl(322, 100%, 66%);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/********************* Media Query *********************/
+@media screen and (max-width: 702px) {
+  body {
+    font-size: 1rem;
+  }
+
+  /*********** Top Container ***********/
+  .top-container {
+    background-image: url(../images/bg-hero-mobile.svg);
+    padding: 6% 5%;
+  }
+
+  /****** Top Bar ******/
+  .top-bar img {
+    height: 1rem;
+  }
+
+  .top-bar button {
+    font-size: 0.7rem;
+    padding: 0.3rem 1.6rem;
+  }
+
+  /****** Introduction ******/
+  .introduction {
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 20% 5% 0;
+  }
+
+  .introduction-paragraph {
+    margin: 0;
+  }
+
+  .introduction-paragraph h1 {
+    font-size: 1.5rem;
+  }
+
+  .introduction-paragraph button {
+    padding: 0.625rem 3.75rem;
+  }
+
+  .introduction-image {
+    margin: 15% 0 5%;
+  }
+
+  /*********** Middle Container ***********/
+  .middle-container {
+    padding: 8% 5% 5%;
+    text-align: center;
+  }
+
+  .card {
+    align-items: stretch;
+    flex-direction: column;
+    border-radius: 25px;
+    height: 100%;
+    margin-bottom: 12%;
+  }
+
+  .card h2 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .card-image,
+  .card-image-left {
+    flex: 1;
+    margin: 0;
+    padding: 12%;
+  }
+
+  .card-description,
+  .card-description-right {
+    order: 1;
+    margin: 0 10%;
+    padding: 0 0 4% 0;
+  }
+
+  .card h2 {
+    margin-bottom: 1.125rem;
+  }
+
+  /*********** CTA ***********/
+  .cta {
+    padding: 0 3%;
+  }
+
+  .cta h2 {
+    font-size: 1.125rem;
+    margin-top: 1.9rem;
+  }
+
+  .cta button {
+    font-size: 0.7rem;
+    margin-bottom: 1.5rem;
+    padding: 0.8rem 3.2rem;
+  }
+
+  /*********** Bottom Section ***********/
+  .bottom-section {
+    padding: 0 8% 0 5%;
+  }
+
+  .bottom-section > img {
+    height: 1.6rem;
+    margin-top: 8rem;
+  }
+
+  .bottom-container {
+    flex-direction: column;
+  }
+
+  .info {
+    margin-bottom: 1.8rem;
+  }
+
+  .link a {
+    margin-left: 0;
+  }
+
+  .social {
+    margin-top: 2.2rem;
+    text-align: center;
+  }
+
+  .social div {
+    padding-top: 0.4rem;
+  }
+
+  /*********** Footer ***********/
+  footer {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  footer div {
+    float: none;
+    padding: 0 0 3rem;
+    text-align: center;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+}
